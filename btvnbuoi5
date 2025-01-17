@@ -1,108 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BTVN buoi 5</title>
-
-
+    <title>Kucra Menu</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-    .menukucra{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
 
-        justify-content: space-around;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    }
+        body {
+            font-family: Arial, sans-serif;
+        }
 
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+        }
 
+        .navbar .logo img {
+            height: 24px;
+            margin-right: 10px;
+        }
 
+        .navbar .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar .menu li {
+            margin: 0 15px;
+        }
+
+        .navbar .menu li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .navbar .menu li a:hover {
+            color: #007bff;
+        }
+
+        .navbar .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .social-icons a {
+            margin-left: 10px;
+            color: #000;
+        }
+
+        .navbar .social-icons a:hover {
+            color: #007bff;
+        }
+
+/*css cua the main*/
+.container{
+    display: flex;
+    background-color:#ffffff ;
+    border-radius: 10px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;)
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+.text-section{
+    padding: 40px;
+    flex: 1;
+}
+.text-section h1 {
+    color: #00796b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.text-section h2{
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.text-section p{
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.image-section{
+    background:#e0f7fa;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-section img{
+    max-width: 100%;
+    height: auto;
+}
+.image-section .speech-bubble{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color:#0288d1 ;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
 
     </style>
-    .logoleft
-    {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    }
-    .menucap2{
-    display: flex;
-
-    flex-direction: column;
-    align-items: center;
-    
-    }
-
 </head>
-
-
 <body>
-<heder>
-    <nav>
-            <ul>
-                <div>
-                    <img src="image/logo-dark.png" alt="kucra">
-                    <li>NHA</li>
+<nav class="navbar">
+    <div class="logo">
+        <img src="image/logo-dark.png" alt="kucra">
+        Kucra
+    </div>
+    <ul class="menu">
+        <li><a href="#">NHÀ</a></li>
+        <li><a href="#">TÍNH NĂNG</a></li>
+        <li><a href="#">KHÁCH HÀNG</a></li>
+        <li><a href="#">GIÁ</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">VỀ</a></li>
+        <li><a href="#">BÀI VIẾT</a></li>
+        <li><a href="#">SỰ TIẾP XÚC</a></li>
+    </ul>
+
+    <div class="social-icons">
+    <img src="image/facebook-128.webp" alt="kucra"></img>
+    <img src="image/twitter-128.webp"></img>
+    <img src="image/social_Media-01-128.webp"></img>
+    </div>
+
+
+
+</nav>
+
+<main>
+
+    <div class="container">
+        <div class="text-section">
+
+            <h1>TUYỆT VỜI</h1>
+            <h2>Chúng tôi là Startup Creative Kucra Agency</h2>
+            <p>Được chế tạo cẩn thận sau khi phân tích nhu cầu của</br>
+                các loại khác nhau ngành công nghiệp và thiết kế đạt</br>
+                được sự cân bằng tuyệt vời giữa mục đích và trình bày.</br>
+            </p>
+            <input type="email" placeholder="Nhập email của bạn">
+            <button>ĐĂNG KÝ</button>
+
+        </div>
+        <div class="image-section">
+
+                <img src="image/kucra1.png" alt="kucra">
+
+                <div class="speech-bubble"> &lt;/&gt;
                 </div>
-
-                <div>
-
-                    <li>TINH NANG</li>
-                    <li>KHACH HANG</li>
-                    <li>GIA</li>
-                    <li>FAQ</li>
-                    <li>VE</li>
-
-                </div>
-                <div class="">
-                    <li><a href="#">BAI VIET</a>
-                        <ul>
-                            <li><a href="#">Bai Viet</a> </li>
-                            <li><a href="#">Danh sach Blog</a> </li>
-                            <li><a href="#">Chi Tiet Blog</a> </li>
-
-                        </ul>
-                    </li>
-                </div>
-
-                <li>SU TIEP XUC</li>
+        </div>
+    </div>
 
 
 
-            </ul>
-            <ul class="logoleft">
-                <img src="image/facebook-128.webp" alt="kucra"></img>
-                <img src="image/twitter-128.webp"></img>
-                <img src="image/social_Media-01-128.webp"></img>
-            </ul>
-
-    </nav>
-</heder>
-
-  <main>
-        <h2>Tuyệt vời</h2>
-        <h1>Chúng tôi là Startup</br>
-            Creative Kucra Agency</h1>
-
-        <p>Được chế tạo cẩn thận sau khi phân tích nhu cầu của</br>
-            các loại khác nhau ngành công nghiệp và thiết kế đạt</br>
-            được sự cân bằng tuyệt vời giữa mục đích và trình bày.</p>
-
-       <form>
-            <input type="Email" id="email" name="Email" required>
-            <button for="email">DANG KY</button>
-       </form>
-        <img src="image/kucra1.png" alt="kucra">
 
 
-
-  </main>
+</main>
 </body>
-
-
 </html>
