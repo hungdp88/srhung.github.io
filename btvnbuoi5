@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTVN buoi 5</title>
+
+
+    <style>
+    .menukucra{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        justify-content: space-around;
+
+    }
+
+
+
+
+
+    </style>
+    .logoleft
+    {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    }
+    .menucap2{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    
+    }
+
+</head>
+
+
+<body>
+<heder>
+    <nav>
+            <ul>
+                <div>
+                    <img src="image/logo-dark.png" alt="kucra">
+                    <li>NHA</li>
+                </div>
+
+                <div>
+
+                    <li>TINH NANG</li>
+                    <li>KHACH HANG</li>
+                    <li>GIA</li>
+                    <li>FAQ</li>
+                    <li>VE</li>
+
+                </div>
+                <div class="">
+                    <li><a href="#">BAI VIET</a>
+                        <ul>
+                            <li><a href="#">Bai Viet</a> </li>
+                            <li><a href="#">Danh sach Blog</a> </li>
+                            <li><a href="#">Chi Tiet Blog</a> </li>
+
+                        </ul>
+                    </li>
+                </div>
+
+                <li>SU TIEP XUC</li>
+
+
+
+            </ul>
+            <ul class="logoleft">
+                <img src="image/facebook-128.webp" alt="kucra"></img>
+                <img src="image/twitter-128.webp"></img>
+                <img src="image/social_Media-01-128.webp"></img>
+            </ul>
+
+    </nav>
+</heder>
+
+  <main>
+        <h2>Tuyệt vời</h2>
+        <h1>Chúng tôi là Startup</br>
+            Creative Kucra Agency</h1>
+
+        <p>Được chế tạo cẩn thận sau khi phân tích nhu cầu của</br>
+            các loại khác nhau ngành công nghiệp và thiết kế đạt</br>
+            được sự cân bằng tuyệt vời giữa mục đích và trình bày.</p>
+
+       <form>
+            <input type="Email" id="email" name="Email" required>
+            <button for="email">DANG KY</button>
+       </form>
+        <img src="image/kucra1.png" alt="kucra">
+
+
+
+  </main>
+</body>
+
+
+</html>
